@@ -4,12 +4,11 @@
 // --------------------------------------------------------
 
 
-using System;
+using ADotNet.Clients;
 using ADotNet.Models.Pipelines.GithubPipelines.DotNets;
 using ADotNet.Models.Pipelines.GithubPipelines.DotNets.Tasks;
 using ADotNet.Models.Pipelines.GithubPipelines.DotNets.Tasks.SetupDotNetTaskV1s;
 using System.Collections.Generic;
-using ADotNet.Clients;
 using System.IO;
 
 var githubPipeline = new GithubPipeline
@@ -18,7 +17,7 @@ var githubPipeline = new GithubPipeline
 
     OnEvents = new Events
     {
-        Push = new PushEvent 
+        Push = new PushEvent
         {
             Branches = new string[] { "master" }
         },
