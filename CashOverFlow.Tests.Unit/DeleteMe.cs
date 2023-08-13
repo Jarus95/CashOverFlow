@@ -6,5 +6,6 @@ namespace CashOverFlow.Tests.Unit
     {
         [Fact]
         public void ShuldBeTrue() => Assert.True(true);
+
     }
 }
