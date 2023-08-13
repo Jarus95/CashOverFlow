@@ -28,7 +28,7 @@ var githubPipeline = new GithubPipeline
         }
     },
 
-    Jobs = new Dictionary<string, Job>
+    Jobs = new Dictionary<string, Job> 
       {
           {
               "build",
