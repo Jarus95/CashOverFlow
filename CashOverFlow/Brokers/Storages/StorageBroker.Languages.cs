@@ -4,13 +4,13 @@
 // --------------------------------------------------------
 
 
-using CashOverFlow.Models.Jobs;
+using CashOverFlow.Models.Languages;
 using Microsoft.EntityFrameworkCore;
 
 namespace CashOverFlow.Brokers.Storages
 {
     public partial class StorageBroker
     {
-        DbSet<Job> Jobs { get; set; }
+        DbSet<Language> Languages { get; set; }
     }
 }
