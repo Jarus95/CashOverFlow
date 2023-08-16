@@ -22,7 +22,7 @@ namespace CashOverFlow.Brokers.Storages
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionstring = "Data Source=(localdb)\\ProjectModels;Initial Catalog=cashoverflowDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            string connectionstring = "Server=(localdb)\\MSSQLLocalDB;Database=CashOverflowDb;Trusted_Connection=True;MultipleActiveResultSets=true";
             optionsBuilder.UseSqlServer(connectionstring);
         }
     }
@@ -31,3 +31,4 @@ namespace CashOverFlow.Brokers.Storages
 
 //this.configuration.GetConnectionString(name: "DefaultConnection");
 //string connectionstring = "Data Source=(localdb)\\ProjectModels;Initial Catalog=cashoverflowDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+//"Server=(localdb)\\MSSQLLocalDB;Database=CashOverflowDb;Trusted_Connection=True;MultipleActiveResultSets=true"
